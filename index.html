@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio of Developer AnveshRaman</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d0f13;
+      color: #fff;
+    }
+
+    header {
+      background: #151820;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      color: #7e5bef;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #4fc3f7;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #7e5bef;
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #1c1f27;
+      border: 1px solid #2b2f37;
+      padding: 1.5rem;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      background: #282b33;
+    }
+
+    .project-title {
+      color: #4fc3f7;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-desc {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .stack-item {
+      background: #1e1f24;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #111319;
+      color: #666;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Developer AnveshRaman</h1>
+    <p>Open-source enthusiast • Full-stack tinkerer • Automation addict</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#tech">Tech Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="projects" class="section">
+    <h2>🛠 Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-title">NameForge</div>
+        <div class="project-desc">A community-driven subdomain registry like js.org and is-a.dev. Supports auto DNS sync, PR-based access, and domain APIs.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Domain Automation Bot</div>
+        <div class="project-desc">Python-based bot that updates DNS records on InfinityFree and FreeDNS from GitHub PRs. Includes validation and headless support.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Custom Domain Panels</div>
+        <div class="project-desc">Created custom HTML panels for each domain like <code>ara.ct.ws</code>, <code>it-is.my-style.in</code>, and <code>css-js.html-5.me</code> with subdomain checkers.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Subdomain Validator</div>
+        <div class="project-desc">A live validator that checks for CNAME records and GitHub JSON file existence to prevent domain abuse.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech" class="section">
+    <h2>🧠 Tech Stack</h2>
+    <div class="stack-list">
+      <div class="stack-item">HTML</div>
+      <div class="stack-item">CSS</div>
+      <div class="stack-item">JavaScript</div>
+      <div class="stack-item">Python</div>
+      <div class="stack-item">Playwright / Selenium</div>
+      <div class="stack-item">GitHub Actions</div>
+      <div class="stack-item">Node.js</div>
+      <div class="stack-item">DNS Automation</div>
+      <div class="stack-item">InfinityFree Hosting</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>📬 Contact Me</h2>
+    <p>Want to collaborate or ask something? Reach out:</p>
+    <p>Email: <a href="mailto:nameforge.rf.gd@gmail.com">nameforge.rf.gd@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/NameForge-Free-Doamin" target="_blank">@NameForge-Free-Doamin</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 SA — Built with ❤️ and GitHub</p>
+  </footer>
+
+</body>
+</html>
