@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #f8f8f8;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #111;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  color: red;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about, .projects, .contact {
+  border-top: 1px solid #222;
+}
+
+h2 {
+  color: #ff3030;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.project {
+  background-color: #111;
+  padding: 1.5rem;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+
+.project h3 {
+  color: #ff4444;
+  margin-top: 0;
+}
+
+.project a {
+  color: red;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #111;
+  color: #666;
+}
