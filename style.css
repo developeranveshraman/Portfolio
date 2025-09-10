@@ -1,79 +1,128 @@
-body {
+/* General reset */
+* {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000;
-  color: #f8f8f8;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background: #f9fafb;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 1rem;
-  background-color: #111;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #6366f1, #3b82f6, #06b6d4);
+  color: white;
 }
 
-.logo {
-  width: 200px;
-  height: auto;
+.hero .logo {
+  width: 120px;
   margin-bottom: 1rem;
 }
 
 .hero h1 {
-  color: red;
   font-size: 2.5rem;
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
-  color: #ccc;
   font-size: 1.2rem;
-  margin-top: 0.5rem;
+  opacity: 0.9;
 }
 
+/* Sections */
 section {
-  padding: 3rem 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.about, .projects, .contact {
-  border-top: 1px solid #222;
-}
-
-h2 {
-  color: #ff3030;
+section h2 {
   font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+/* Project Grid */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+}
+
+.card p {
+  font-size: 0.95rem;
   margin-bottom: 1rem;
 }
 
-.project-list {
-  display: grid;
-  gap: 2rem;
-}
-
-.project {
-  background-color: #111;
-  padding: 1.5rem;
-  border: 1px solid #222;
-  border-radius: 10px;
-}
-
-.project h3 {
-  color: #ff4444;
-  margin-top: 0;
-}
-
-.project a {
-  color: red;
+.card a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #2563eb;
+  color: white;
   text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
 }
 
-.project a:hover {
-  text-decoration: underline;
+.card a:hover {
+  background: #1e40af;
 }
 
+/* Contact */
+.contact p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #111;
-  color: #666;
+  padding: 1.5rem;
+  background: #1e3a8a;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
